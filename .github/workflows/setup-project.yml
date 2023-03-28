@@ -1,14 +1,14 @@
-name: Install dependencies
+name: Setup project
 on:
   push:
     branchs: [ stage, main, master ]
 
 jobs:
-  install:
+  install-dependencies:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install composer dependencies
+      - name: Composer dependencies
         run: |
           composer install -o
