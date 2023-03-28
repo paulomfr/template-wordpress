@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Root composer dependencies
+      - name: Installing root dependencies
         run: |
           composer install -o
