@@ -4,7 +4,7 @@ on:
     branchs: [ stage, main, master ]
 
 jobs:
-  Install dependencies:
+  install-dependencies:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
