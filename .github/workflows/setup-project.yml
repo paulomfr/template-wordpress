@@ -4,11 +4,11 @@ on:
     branchs: [ stage, main, master ]
 
 jobs:
-  install-dependencies:
+  Install dependencies:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Composer dependencies
+      - name: Root composer dependencies
         run: |
           composer install -o
